@@ -386,6 +386,31 @@ class _AllHomeState extends State<AllHome> with SingleTickerProviderStateMixin {
                       ),
                     );
                   }, childCount: list.length));
+                case BusinessError:
+                return SliverToBoxAdapter(
+                  child: Center(
+                    child: CustomText(
+                      colortext: kColorgrayDetail,
+                      data: "Justo ahora no podemos continuar :c ...",
+                      fontSize: kDimens14,
+                      fontWeight: FontWeight.w600,
+                       maxlines: 2,
+                    ),
+                  ),
+                );
+                case BusinessNotConections:
+                return SliverToBoxAdapter(
+                  child: Center(
+                    child: CustomText(
+                      colortext: kColorgrayDetail,
+                      data: "Error, Por favor verifica tu conexion a internet :c ...",
+                      fontSize: kDimens14,
+                      fontWeight: FontWeight.w600,
+                      maxlines: 2,
+                    ),
+                  ),
+                );
+                
                 default:
                   List<CharaterModels> list =
                       context.read<BusinessCubit>().charaterModelList;
