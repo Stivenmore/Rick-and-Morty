@@ -1,0 +1,34 @@
+{   "code": 200,
+    "info": {
+        "count": 29,
+        "pages": 2,
+        "next": "https://rickandmortyapi.com/api/character/?page=2&name=rick&status=alive",
+        "prev": ""
+    },
+    "results": [
+        {
+            "id": 15,
+            "name": "Rick Sanchez",
+            "status": "Alive",
+            "species": "Human",
+            "type": "Nose",
+            "gender": "Male",
+            "origin": {
+                "name": "Earth",
+                "url": "https://rickandmortyapi.com/api/location/1"
+            },
+            "location": {
+                "name": "Earth",
+                "url": "https://rickandmortyapi.com/api/location/20"
+            },
+            "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            "episode": [
+                "https://rickandmortyapi.com/api/episode/15",
+                "https://rickandmortyapi.com/api/episode/25"
+            ],
+            "url": "https://rickandmortyapi.com/api/character/1",
+            "created": "2017-15-04T18:48:46.250Z"
+        }
+        
+    ]
+}

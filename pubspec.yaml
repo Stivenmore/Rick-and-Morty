@@ -1,0 +1,39 @@
+name: rickandmorty
+description: Rick and Morty app.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  dio: ^4.0.6
+  flutter_bloc: ^8.0.1
+  google_fonts: ^3.0.0
+  equatable: ^2.0.3
+  shimmer: ^2.0.0
+  build_runner: ^2.1.11
+  provider: ^6.0.3
+  bloc_test: ^9.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/mock/
